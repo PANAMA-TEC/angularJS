@@ -1,4 +1,4 @@
 export let Path = {
-	url: 'http://localhost:4200/assets/' 
+	url: 'http://angularjs-279913.appspot.com:8080/assets/' 
 	
 }
