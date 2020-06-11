@@ -35,7 +35,7 @@ export class HeaderPromotionComponent implements OnInit {
 
 				this.top_banner = JSON.parse(resp[Object.keys(resp)[index]].top_banner);
 
-				console.log(this.top_banner);
+				//console.log(this.top_banner);
 				this.preload = false;
 
 
