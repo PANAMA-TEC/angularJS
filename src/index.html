@@ -1,132 +1,208 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
+	<!-- titulo y demas -->
+		<title>DASHBOARD [iOT33]</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<!-- bootstrap -->
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
 
-	<base href="/">
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-	<title>MarketPlace | Home</title>
-	<link rel="icon" href="assets/img/template/icono.png">
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-	<!--=====================================
-	CSS
-	======================================-->
-	
-	<!-- google font -->
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- Graficos -->
+		<link href="assets/css/morris.css" rel="stylesheet" >
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<script src="assets/js/morris.min.js"></script>
 
-	<!-- font awesome -->
-	<link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+	<!-- icono de la barra de titulo -->
+		<link  rel="icon"   href="https://img.icons8.com/office/16/000000/graph.png" type="image/png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- linear icons -->
-	<link rel="stylesheet" href="assets/css/plugins/linearIcons.css">
-
-	<!-- Bootstrap 4 -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="assets/css/plugins/owl.carousel.css">
-
-	<!-- Slick -->
-	<link rel="stylesheet" href="assets/css/plugins/slick.css">
-
-	<!-- Light Gallery -->
-	<link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
-
-	<!-- Font Awesome Start -->
-	<link rel="stylesheet" href="assets/css/plugins/fontawesome-stars.css">
-
-	<!-- jquery Ui -->
-	<link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
-
-	<!-- Select 2 -->
-	<link rel="stylesheet" href="assets/css/plugins/select2.min.css">
-
-	<!-- Scroll Up -->
-	<link rel="stylesheet" href="assets/css/plugins/scrollUp.css">
-    
-    <!-- DataTable -->
-    <link rel="stylesheet" href="assets/css/plugins/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/responsive.bootstrap.datatable.min.css">
-	
-	<!-- estilo principal -->
-	<link rel="stylesheet" href="assets/css/style.css">
-
-	<!-- Market Place 4 -->
-	<link rel="stylesheet" href="assets/css/market-place-4.css">
-
-
-	
-	<!--=====================================
-	PLUGINS JS
-	======================================-->
-
-	<!-- jQuery library -->
-	<script src="assets/js/plugins/jquery-1.12.4.min.js"></script>
-
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-	<!-- Owl Carousel -->
-	<script src="assets/js/plugins/owl.carousel.min.js"></script>
-
-	<!-- Images Loaded -->
-	<script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
-
-	<!-- Masonry -->
-	<script src="assets/js/plugins/masonry.pkgd.min.js"></script>
-
-	<!-- Isotope -->
-	<script src="assets/js/plugins/isotope.pkgd.min.js"></script>
-
-	<!-- jQuery Match Height -->
-	<script src="assets/js/plugins/jquery.matchHeight-min.js"></script>
-
-	<!-- Slick -->
-	<script src="assets/js/plugins/slick.min.js"></script>
-
-	<!-- jQuery Barrating -->
-	<script src="assets/js/plugins/jquery.barrating.min.js"></script>
-
-	<!-- Slick Animation -->
-	<script src="assets/js/plugins/slick-animation.min.js"></script>
-
-	<!-- Light Gallery -->
-	<script src="assets/js/plugins/lightgallery-all.min.js"></script>
-
-	<!-- jQuery UI -->
-	<script src="assets/js/plugins/jquery-ui.min.js"></script>
-
-	<!-- Sticky Sidebar -->
-	<script src="assets/js/plugins/sticky-sidebar.min.js"></script>
-
-	<!-- Slim Scroll -->
-	<script src="assets/js/plugins/jquery.slimscroll.min.js"></script>
-
-	<!-- Select 2 -->
-	<script src="assets/js/plugins/select2.full.min.js"></script>
-
-	<!-- Scroll Up -->
-	<script src="assets/js/plugins/scrollUP.js"></script>
-
-    <!-- DataTable -->
-    <script src="assets/js/plugins/jquery.dataTables.min.js"></script>
-    <script src="assets/js/plugins/dataTables.bootstrap4.min.js"></script>
-    <script src="assets/js/plugins/dataTables.responsive.min.js"></script>
-
-    <!-- Chart -->
-    <script src="assets/js/plugins/Chart.min.js"></script>
 </head>
-<body>
-  <app-root></app-root>
+<body onload="getWelcome()" style="background-color: #CFD8DC;">
+	<div class="container">	
+		<div class="" style="border-radius: 5px;">
+			<div class="row" style=" border-style: solid; border-color: #455A64; background-color: #455A64; margin-top: 25px;   border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+				<!-- COLUMNA IZQUIERDA EN L Y XL -->
+					<div class="col s12 m12 l12 xl4 " >	
+						
+						<!-- BARRA DE TITULO    -->
+							<div class="row" style="margin-top: 20px; color: white;">
+								<div class="col s12 m12 l12 xl12" >
+									<div class="col teal" style="border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+										
+										<div class="col s12" style=" margin-top:20px; font-size: 15px; font-weight:bold;">ARDUINOIOT33 - PANAMA-TEC</div>
+										
+										
+										
+										<div class="col s12" style="margin-top: 5px; font-size: 100%; height: 30px;">ARD-PA15062020</div>
+										
+										<div class="col s12" >
+											<div style="margin-top: 5px; font-size: 12px; text-align: justify; margin-bottom: 20px;">Sensores insatalados en la provincia de panamá, medicion en tiempo real de condiciones atmosféricas. Tiempo de actualización de la informacion, alrededor de 5 min. Base de datos noSQL de firebase</div>
+										</div>
+
+									</div>
+								
+								</div>
+							</div>
+
+						<!-- ÁREA DE SENSORES   -->
+							<div class="row" style="color: white; margin-top: 40px;">
+								<div class="col s12 m12 l12">
+									<div class=" teal " style="border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+										<div class="row ">
+											<div class="col s6" style="font-weight:bold; margin-top: 20px; margin-bottom: 20px;"> 
+												<div style="margin-left: 60px;"> Bateria:</div>
+											</div>
+
+											<div  class="col s6"  style=" margin-top: 20px;  margin-bottom: 20px;">
+												<div class="right-align" id="temperatura" style="margin-right: 60px;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col s12 m12 l12">
+									<div class=" teal " style="border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+										<div class="row ">
+											<div class="col s6" style="font-weight:bold; margin-top: 20px; margin-bottom: 20px;"> 
+												<div style="margin-left: 60px;"> Humedad:</div>
+											</div>
+
+											<div  class="col s6"  style=" margin-top: 20px;  margin-bottom: 20px;">
+												<div class="right-align" id="humedad" style="margin-right: 60px;"></div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+
+								<div class="col s12 m12 l12">
+									<div class=" teal " style="border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+										<div class="row ">
+											<div class="col s6" style="font-weight:bold; margin-top: 20px; margin-bottom: 20px;"> 
+												<div style="margin-left: 60px;"> Bateria:</div>
+											</div>
+
+											<div  class="col s6"  style=" margin-top: 20px;  margin-bottom: 20px;">
+												<div class="right-align" id="battery" style="margin-right: 60px;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col s12 m12 l12">
+									<div class=" teal " style="border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+										<div class="row ">
+											<div class="col s6" style="font-weight:bold; margin-top: 20px; margin-bottom: 20px;"> 
+												<div style="margin-left: 60px;"> Voltaje:</div>
+											</div>
+
+											<div  class="col s6"  style=" margin-top: 20px;  margin-bottom: 20px;">
+												<div class="right-align" id="battery-voltaje" style="margin-right: 60px;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+					
+					</div>
+				<!-- COLUMNA DERECHA - GRAFICO DEL SISTEMA -->
+					<div class="col s12 m12 l12 xl8" style="margin-top: 20px;">
+						<div id="myfirstchart" style="background-color: white; border-radius: 5px; height: 440px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"></div>
+				<!-- FILTRADO DE DATOS  -->
+					<div class="row s12" style=" border-radius: 10px; height: 100px; margin-top: 10px;">
+						<div class="col">
+							<div class="col" style=" color:black; background-color:white;border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+								
+								<div class="col s6 m6 ">
+									<div class="input-field valign-wrapper" style="">
+										 <i class="material-icons prefix ">date_range</i>
+										<input id="date_range_1" type="text" value="">
+										<label id="label-date-1" for="date_range_1"></label>
+									</div>
+								</div>
+
+								<div class="col s6 m6">
+									<div class="input-field valign-wrapper" style="">
+										<i class="material-icons prefix">timelapse</i>
+										<input id="hora_1" type="text" value="">
+										<label for="hora_1">7:00</label>
+									</div>
+								</div>
+								<div class="col s6 m6">
+									<div class="input-field valign-wrapper" style="">
+										 
+										 <i class="material-icons prefix ">date_range</i>
+										<input id="date_range_2" type="text" value="">
+										<label id ="label-date-2" for="date_range_2"></label>
+									
+									</div>
+								</div>
+								<div class="col s6 m6">
+									<div class="input-field valign-wrapper" style="">
+										
+										<i class="material-icons prefix">timelapse</i>
+										<input id="hora_2" type="text" value="">
+										<label for="hora_2">16:00</label>
+				
+									</div>
+								</div>
+							</div>
+
+							<div class="col s12 white valign-wrapper" style=" border-radius:10px; margin-top: 10px;  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+								
+								<div id="filtro_actual" class="col s9" style=" margin-left:5px; margin-top: 20px; margin-bottom: 20px; "></div>
+									 
+							
+
+								<div class="right-align col s2 "> 
+									<div style=" margin-top: 10px; margin-bottom: 10px;">
+										<a class="btn-floating pulse" onclick="setfilter()">
+										<i class="material-icons ">fast_forward</i></a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				
+						
+			<!-- Fecha del sistema -->
+				<div class="col s12" style="color: white; font-weight: bold;">
+					<div class="teal" style="border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+						<div class="row" style="margin-top: 20px;">
+							<div class="col s12">
+								
+								<div class="col s6 l6 xl6" style="margin-top:20px; margin-bottom: 20px;"  >
+									<div id="time" style="margin-left: 20px;"></div>
+								</div>
+								
+								<div class="col s6 l6 xl6  " style="margin-top:20px; margin-bottom: 20px; border-style: none;">
+									<div class="right-align" style="margin-right: 20px;">PANAMA-TEC RESERCH</div>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+
+		
+
+		<a class="btn-floating pulse"><i class="material-icons">cloud</i></a>
+	</div>
+	<script src="assets/js/grafico.js" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>	
 </body>
 </html>
