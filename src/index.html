@@ -117,64 +117,69 @@
 					</div>
 				<!-- COLUMNA DERECHA - GRAFICO DEL SISTEMA -->
 					<div class="col s12 m12 l12 xl8" style="margin-top: 20px;">
+						<!-- GRAFICO DEL SISTEMA -->
 						<div id="myfirstchart" style="background-color: white; border-radius: 5px; height: 440px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"></div>
-				<!-- FILTRADO DE DATOS  -->
-					<div class="row s12" style=" border-radius: 10px; height: 100px; margin-top: 10px;">
-						<div class="col">
-							<div class="col" style=" color:black; background-color:white;border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
-								
-								<div class="col s6 m6 ">
-									<div class="input-field valign-wrapper" style="">
-										 <i class="material-icons prefix ">date_range</i>
-										<input id="date_range_1" type="text" value="">
-										<label id="label-date-1" for="date_range_1"></label>
-									</div>
-								</div>
-
-								<div class="col s6 m6">
-									<div class="input-field valign-wrapper" style="">
-										<i class="material-icons prefix">timelapse</i>
-										<input id="hora_1" type="text" value="">
-										<label for="hora_1">7:00</label>
-									</div>
-								</div>
-								<div class="col s6 m6">
-									<div class="input-field valign-wrapper" style="">
-										 
-										 <i class="material-icons prefix ">date_range</i>
-										<input id="date_range_2" type="text" value="">
-										<label id ="label-date-2" for="date_range_2"></label>
-									
-									</div>
-								</div>
-								<div class="col s6 m6">
-									<div class="input-field valign-wrapper" style="">
+						<!-- FILTRADO DE DATOS  -->
+							<div class="row s12" style=" border-radius: 10px; height: 100px; margin-top: 10px;">
+								<div class="col">
+									<div class="col" style=" color:black; background-color:white;border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
 										
-										<i class="material-icons prefix">timelapse</i>
-										<input id="hora_2" type="text" value="">
-										<label for="hora_2">16:00</label>
+										<div class="col s6 m6 ">
+											<div class="input-field valign-wrapper" style="">
+												 <i class="material-icons prefix ">date_range</i>
+												<input id="date_range_1" type="text" value="">
+												<label id="label-date-1" for="date_range_1"></label>
+											</div>
+										</div>
+
+										<div class="col s6 m6">
+											<div class="input-field valign-wrapper" style="">
+												<i class="material-icons prefix">timelapse</i>
+												<input id="hora_1" type="text" value="">
+												<label for="hora_1">7:00</label>
+											</div>
+										</div>
+
+										<div class="col s6 m6">
+											<div class="input-field valign-wrapper" style="">
+												 
+												 <i class="material-icons prefix ">date_range</i>
+												<input id="date_range_2" type="text" value="">
+												<label id ="label-date-2" for="date_range_2"></label>
+											
+											</div>
+										</div>
+										
+										<div class="col s6 m6">
+											<div class="input-field valign-wrapper" style="">
+												
+												<i class="material-icons prefix">timelapse</i>
+												<input id="hora_2" type="text" value="">
+												<label for="hora_2">16:00</label>
+						
+											</div>
+										</div>
+
+									</div>
+
+									<div class="col s12 white valign-wrapper" style=" border-radius:10px; margin-top: 10px;  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+										
+										<div id="filtro_actual" class="col s9" style=" margin-left:5px; margin-top: 20px; margin-bottom: 20px; "></div>
+										<div class="right-align col s2 "> 
+											<div style=" margin-top: 10px; margin-bottom: 10px;">
+												<a class="btn-floating pulse" onclick="setfilter()">
+												<i class="material-icons ">fast_forward</i></a>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
 				
-									</div>
-								</div>
-							</div>
-
-							<div class="col s12 white valign-wrapper" style=" border-radius:10px; margin-top: 10px;  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
-								
-								<div id="filtro_actual" class="col s9" style=" margin-left:5px; margin-top: 20px; margin-bottom: 20px; "></div>
-									 
-							
-
-								<div class="right-align col s2 "> 
-									<div style=" margin-top: 10px; margin-bottom: 10px;">
-										<a class="btn-floating pulse" onclick="setfilter()">
-										<i class="material-icons ">fast_forward</i></a>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
+				<!-- con quien va esto?? -->
 				</div>
+				<!-- con quien va esto?? -->
 				
 						
 			<!-- Fecha del sistema -->
@@ -196,11 +201,7 @@
 					</div>
 				</div>		
 			</div>
-		</div>
-
-		
-
-		<a class="btn-floating pulse"><i class="material-icons">cloud</i></a>
+		</div>	
 	</div>
 	<script src="assets/js/grafico.js" charset="utf-8"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>	
